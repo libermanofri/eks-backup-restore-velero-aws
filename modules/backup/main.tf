@@ -47,20 +47,6 @@ resource "aws_iam_role" "backup_role" {
   assume_role_policy = data.aws_iam_policy_document.assume_role.json
 }
 
-data "aws_iam_policy_document" "policy" {
-  statement {
-    effect    = "Allow"
-    actions   = ["backup:Describe*"]
-    resources = ["*"]
-  }
-}
-
-resource "aws_iam_policy" "role_policy_name" {
-  name        = var.role_policy_name
-  description = "A test policy"
-  policy      = data.aws_iam_policy_document.policy.json
-}
-
 resource "aws_iam_role_policy_attachment" "backup_policy_attach" {
   role       = var.role_name
   policy_arn = var.s3_backup_policy_arn

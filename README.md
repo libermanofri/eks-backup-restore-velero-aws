@@ -1,4 +1,4 @@
-# Final Project: EKS Backup and Restore using Velero and AWS Backup
+# EKS Backup and Disaster Recovery with Velero and AWS Backup
 
 ## Overview
 The project focuses on creating a reliable **backup and restore solution** for an **Amazon EKS (Elastic Kubernetes Service)** cluster using **Velero** and **AWS Backup**. The goal was to design and automate a backup mechanism for Kubernetes resources and persist them to **Amazon S3**. We also explored recovery strategies to restore workloads seamlessly without downtime.
@@ -481,5 +481,11 @@ The project also provided practical exposure to tools and technologies such as T
 
 With these implementations, this project stands as a comprehensive solution for Kubernetes backup and restore, aligning with industry best practices and real-world scenarios.
 
-
 ---
+
+## Author
+
+Ofri Liberman
+
+- GitHub: https://github.com/libermanofri
+- LinkedIn: https://linkedin.com/in/ofriliberman

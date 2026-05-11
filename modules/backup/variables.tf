@@ -13,14 +13,9 @@ variable "backup_rule_name" {
   default     = "daily-backup-rule"
 }
 
-variable "bucket_name_velero" {
-  description = "The name of the backup rule."
-  default     = "eks-velero-backup-bucket"
-}
-
 variable "schedule" {
   description = "The schedule in cron expression for backups."
-  default     = "cron(0 12 * * ? *)"
+  default     = "cron(0 12 *  ? *)"
 }
 
 variable "delete_after" {
@@ -51,11 +46,6 @@ variable "tag_value" {
 variable "role_name" {
   description = "The name of the IAM role for backups."
   default     = "backup-role"
-}
-
-variable "role_policy_name" {
-  description = "The name of the IAM role policy."
-  default     = "AWSBackupServiceRolePolicyForS3Backup"
 }
 
 variable "s3_backup_policy_arn" {
