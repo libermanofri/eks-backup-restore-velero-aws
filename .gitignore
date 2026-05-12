@@ -1,5 +1,21 @@
 # Default ignored files
 /shelf/
-/workspace.xml
-*.terraform*
-*.tfstate*
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+terraform.tfvars
+*.tfvars
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# IDE
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
