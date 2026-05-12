@@ -266,7 +266,7 @@ module "velero_irsa_role" {
 
   oidc_providers = {
     eks_oidc = {
-      provider_arn               = "arn:aws:iam::023196572641:oidc-provider/${local.sliced_url}"
+      provider_arn               = "arn:aws:iam::<AWS_ACCOUNT_ID>:oidc-provider/${local.sliced_url}"
       namespace_service_accounts = ["velero-ofri:velero"]
     }
   }
